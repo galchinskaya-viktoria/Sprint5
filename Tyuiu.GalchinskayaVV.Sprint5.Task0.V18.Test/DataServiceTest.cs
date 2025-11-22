@@ -10,7 +10,7 @@ namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Test
         [TestMethod]
         public void CheckCalculateValid()
         {
-            Class1 ds = new Class1();
+            DataService ds = new DataService();
             int x = 3;
             double result = ds.Calculate(x);
             double wait = 0.866;
@@ -20,7 +20,7 @@ namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Test
         [TestMethod]
         public void CheckSaveToFileValid()
         {
-            Class1 ds = new Class1();
+            DataService ds = new DataService();
             int x = 3;
             string path = ds.SaveToFile(x);
 
