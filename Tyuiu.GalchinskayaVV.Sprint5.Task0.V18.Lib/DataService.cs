@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Globalization;
-using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Lib
 {

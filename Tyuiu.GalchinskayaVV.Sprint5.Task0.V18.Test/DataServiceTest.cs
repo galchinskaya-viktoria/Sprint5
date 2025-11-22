@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Lib;
-using System.IO;
 
 namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Test
 {
