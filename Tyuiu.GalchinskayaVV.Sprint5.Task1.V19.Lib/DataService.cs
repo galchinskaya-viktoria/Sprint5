@@ -28,8 +28,9 @@ namespace Tyuiu.GalchinskayaVV.Sprint5.Task1.V19.Lib
                 }
 
                 fx = Math.Round(fx, 2);
-                sb.AppendLine($"{x};{fx.ToString("0.00", CultureInfo.InvariantCulture)}");
+                sb.AppendLine(fx.ToString("0.##").Replace('.', ','));
             }
+
 
             File.WriteAllText(path, sb.ToString());
             return path;
