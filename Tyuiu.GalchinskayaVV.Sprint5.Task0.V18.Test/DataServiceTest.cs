@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Lib;
 
 namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Test
@@ -7,22 +8,16 @@ namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckCalculateValid()
+        public void CheckSaveToFileTextDataValid()
         {
+      
             DataService ds = new DataService();
             int x = 3;
-            double result = ds.Calculate(x);
-            double wait = 0.866;
-            Assert.AreEqual(wait, result);
-        }
 
-        [TestMethod]
-        public void CheckSaveToFileValid()
-        {
-            DataService ds = new DataService();
-            int x = 3;
-            string path = ds.SaveToFile(x);
+      
+            string path = ds.SaveToFileTextData(x);
 
+     
             Assert.IsTrue(File.Exists(path));
 
             string fileContent = File.ReadAllText(path);

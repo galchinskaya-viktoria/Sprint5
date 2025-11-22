@@ -28,7 +28,7 @@ namespace Tyuiu.GalchinskayaVV.Sprint5.Task0.V18
             Console.WriteLine("***************************************************************************");
 
             DataService ds = new DataService();
-            string path = ds.SaveToFile(x);
+            string path = ds.SaveToFileTextData(x);
 
             Console.WriteLine(path);
             Console.ReadKey();
